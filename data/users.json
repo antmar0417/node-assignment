@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Donkey Kong",
+    "occupation": "Security"
+  },
+  {
+    "id": 2,
+    "name": "Wario",
+    "occupation": "Evil"
+  },
+  {
+    "id": 3,
+    "name": "Mario",
+    "occupation": "Good"
+  }
+]
