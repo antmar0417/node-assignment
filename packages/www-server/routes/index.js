@@ -2,16 +2,7 @@ import express from "express";
 const router = express.Router();
 import mongoose from "mongoose";
 
-/*
-    Models for making calls to database should be added here, ex:
-    const ModelName = mongoose.model('ModelName');
-*/
 const Videos = mongoose.model("Videos");
-
-/* Add routes here */
-router.get("/some-route", async (req, res) => {
-  res.send("I'm alive");
-});
 
 router.get("/entries", async (req, res) => {
   const videos = await Videos.find().sort({
