@@ -6,7 +6,7 @@ const Videos = mongoose.model("Videos");
 
 router.get("/entries", async (req, res) => {
   const videos = await Videos.find().sort({
-    name: "ascending",
+    _id: "descending",
   });
   res.json(videos);
 });
