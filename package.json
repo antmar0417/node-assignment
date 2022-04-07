@@ -1,25 +1,17 @@
 {
-  "name": "node02",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon server.js"
-  },
-  "bin": {
-    "demo-cli": "index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.8",
-    "morgan": "^1.10.0",
-    "node-fetch": "^3.2.2",
-    "nodemon": "^2.0.15",
-    "yargs": "^17.3.1"
-  }
+    "name": "yrgo-mern-app",
+    "version": "1.0.0",
+    "engines": {
+        "node": "16.x"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "lerna run --parallel dev"
+    },
+    "private": true,
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    }
 }
